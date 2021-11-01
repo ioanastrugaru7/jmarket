@@ -23,10 +23,6 @@ def user_login_route():
             flash('Incorrect username or password, please try again!', category='danger')
     return render_template('login.html', form=form)
 
-@app.route("/admin", methods=['GET', 'POST'])
-def admin_route():
-    return "<h3>Here you will control the user rights</h3>" 
-
 
 @app.route("/register", methods=['GET', 'POST'])
 def user_register_route():
